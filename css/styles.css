@@ -148,14 +148,14 @@ p {
 
   display: flex;
   gap: 50px;
+  align-items: baseline;
 }
 
 .icon-tel,
 .icon-mail {
-  width: 16px;
-  height: 12px;
-  display: inline-flex;
-  align-items: center;
+  fill: currentColor;
+
+  margin-right: 10px;
 }
 .link-mail,
 .link-tel {
@@ -398,18 +398,37 @@ p {
 .clients-list {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .clients-item {
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
-.clients-link {
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
+
+/* .clients-link:hover,
+.clients-link:focus {
+  
+} */
 .client-icon {
+  fill: currentColor;
 }
 /* футер */
 .section-footer {
   background-color: var(--background-color-basic);
   padding: 60px 0;
 }
+.footer {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
 .section-logo {
   font-family: var(--font-logo);
   font-weight: 700;
@@ -424,6 +443,8 @@ p {
   display: inline-block;
 }
 
+.address {
+}
 .section-address {
   font-style: normal;
   display: block;
@@ -453,7 +474,28 @@ p {
 .section-link-tel:hover {
   color: var(--color-white);
 }
+.social {
+  /* width: 206px;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: ; */
+}
+.social-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 10px;
 
+  display: block;
+}
+.footer-link {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
 /* стилі для portfolio.html */
 
 /* секція фільтри */
