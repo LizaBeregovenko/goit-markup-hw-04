@@ -137,13 +137,8 @@ p {
 }
 .link {
 }
-.icon {
-  width: 16px;
-  height: 12px;
-  display: inline-flex;
-  align-items: center;
-}
-.contact_list {
+
+.contact-list {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -153,6 +148,14 @@ p {
 
   display: flex;
   gap: 50px;
+}
+
+.icon-tel,
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
 }
 .link-mail,
 .link-tel {
@@ -239,6 +242,22 @@ p {
 .about-item {
   width: 270px;
 }
+
+.icon-about {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+}
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  padding: 25px 100px;
+  background-color: rgba(245, 244, 250, 1);
+
+  margin-bottom: 30px;
+}
+
 .about-title {
   font-weight: 700;
   font-size: 14px;
@@ -323,8 +342,69 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: inherit;
+
+  margin-bottom: 16px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-item {
+}
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+
+  color: #afb1b8;
+  justify-content: center;
+  align-items: center;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+/* .social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--color-white);
+} */
+
+.social-icon {
+  fill: currentColor;
+}
+
+/* клієнти */
+.client {
+}
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+
+  margin-bottom: 50px;
+}
+.clients {
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+.clients-item {
+}
+.clients-link {
+}
+.client-icon {
+}
 /* футер */
 .section-footer {
   background-color: var(--background-color-basic);
